@@ -34,7 +34,14 @@
                 "element": {"#": "nextButton"},
                 "enabled": true,
                 "label": "Next"
-            }
+            },
+            "listeners": [
+                {
+                    "type": "action",
+                    "useCapture": false,
+                    "listener": {"@": "owner"}
+                }
+            ]
         },
         "overlay": {
             "prototype": "montage/ui/overlay.reel",
