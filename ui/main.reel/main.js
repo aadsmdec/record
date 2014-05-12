@@ -13,5 +13,11 @@ exports.Main = Component.specialize(/** @lends Main# */ {
         value: function Main() {
             this.super();
         }
+    },
+    
+    handleAddUserButtonAction: {
+        value: function() {
+            this.templateObjects.overlay.show();
+        }
     }
 });
