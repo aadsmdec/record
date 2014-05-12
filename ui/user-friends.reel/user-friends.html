@@ -9,12 +9,57 @@
             "properties": {
                 "element": {"#": "owner"}
             }
+        },
+        "actionEventListener": {
+            "prototype": "montage/core/event/action-event-listener",
+            "properties": {
+                "action": "addContent",
+                "handler": {"@": "rangeController"}
+            },
+            "_dev": {
+                "isHidden": true
+            }
+        },
+        "button": {
+            "prototype": "digit/ui/button.reel",
+            "properties": {
+                "element": {"#": "button"},
+                "enabled": true,
+                "label": "Add Friend"
+            },
+            "listeners": [
+                {
+                    "type": "action",
+                    "useCapture": false,
+                    "listener": {"@": "actionEventListener"}
+                }
+            ]
+        },
+        "friendDetail": {
+            "prototype": "ui/friend-detail.reel",
+            "properties": {
+                "element": {"#": "friendDetail"}
+            }
+        },
+        "rangeController": {
+            "prototype": "montage/core/range-controller"
+        },
+        "repetition": {
+            "prototype": "montage/ui/repetition.reel",
+            "properties": {
+                "element": {"#": "repetition"},
+                "contentController": {"@": "rangeController"}
+            }
         }
     }
     </script>
 </head>
 <body>
     <div data-montage-id="owner" class="UserFriends">
+        <button data-montage-id="button"></button>
+        <div data-montage-id="repetition">
+            <div data-montage-id="friendDetail"></div>
+        </div>
     </div>
 </body>
 </html>
