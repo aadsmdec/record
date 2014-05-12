@@ -1,8 +1,8 @@
 .UserDetails {
-    width: 500px;
-    height: 500px;
+    width: 300px;
+    height: 300px;
     padding: 50px;
-    background-color: gray;
-    border: 1px solid black;
-    border-radius: 5px;
+    background-color: #ccc;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px;
 }
