@@ -7,7 +7,7 @@
     box-shadow: 0px 0px 15px;
 }
 
-..Main-next {
+.Main-next {
     position: absolute;
     bottom: 20px;
     right: 50px;

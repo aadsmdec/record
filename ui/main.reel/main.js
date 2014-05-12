@@ -19,5 +19,11 @@ exports.Main = Component.specialize(/** @lends Main# */ {
         value: function() {
             this.templateObjects.overlay.show();
         }
+    },
+
+    handleNextButtonAction: {
+        value: function() {
+            this.ownerComponent.parentComponent.switchValue = "user-friends";
+        }
     }
 });

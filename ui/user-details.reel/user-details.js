@@ -13,11 +13,5 @@ exports.UserDetails = Component.specialize(/** @lends UserDetails# */ {
         value: function UserDetails() {
             this.super();
         }
-    },
-    
-    handleNextButtonAction: {
-        value: function() {
-            this.ownerComponent.parentComponent.switchValue = "user-friends";
-        }
     }
 });
