@@ -1,18 +1,3 @@
-.UserDetails {
-    width: 300px;
-    height: 300px;
-    padding: 50px;
-    background-color: #ccc;
-    border-radius: 15px;
-    box-shadow: 0px 0px 15px;
-}
-
 .UserDetails div {
     margin-bottom: 10px;
-}
-
-.UserDetails-next {
-    position: absolute;
-    bottom: 20px;
-    right: 50px;
 }
