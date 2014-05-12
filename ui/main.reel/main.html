@@ -28,6 +28,14 @@
                 }
             ]
         },
+        "nextButton": {
+            "prototype": "digit/ui/button.reel",
+            "properties": {
+                "element": {"#": "nextButton"},
+                "enabled": true,
+                "label": "Next"
+            }
+        },
         "overlay": {
             "prototype": "montage/ui/overlay.reel",
             "properties": {
@@ -59,11 +67,12 @@
 <body>
     <div data-montage-id="main" data-montage-skin="light" class="Main">
         <button data-montage-id="addUserButton"></button>
-        <div data-montage-id="overlay">
+        <div data-montage-id="overlay" class="Main-overlay">
             <div data-montage-id="substitution">
                 <div data-montage-id="userDetails" data-arg="user-details"></div>
                 <div data-montage-id="userFriends" data-arg="user-friends"></div>
             </div>
+            <button data-montage-id="nextButton"></button>
         </div>
     </div>
 </body>
