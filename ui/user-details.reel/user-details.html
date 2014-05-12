@@ -10,6 +10,14 @@
                 "element": {"#": "owner"}
             }
         },
+        "nextButton": {
+            "prototype": "digit/ui/button.reel",
+            "properties": {
+                "element": {"#": "nextButton"},
+                "enabled": true,
+                "label": "Next"
+            }
+        },
         "text": {
             "prototype": "montage/ui/text.reel",
             "properties": {
@@ -28,14 +36,14 @@
             "prototype": "digit/ui/text-field.reel",
             "properties": {
                 "element": {"#": "textField"},
-                "placeholderValue": "Text"
+                "placeholderValue": ""
             }
         },
         "textField2": {
             "prototype": "digit/ui/text-field.reel",
             "properties": {
                 "element": {"#": "textField2"},
-                "placeholderValue": "Text"
+                "placeholderValue": ""
             }
         }
     }
@@ -51,6 +59,7 @@
             <span data-montage-id="text2"></span>
             <input data-montage-id="textField2" type="text">
         </div>
+        <button data-montage-id="nextButton"></button>
     </div>
 </body>
 </html>
