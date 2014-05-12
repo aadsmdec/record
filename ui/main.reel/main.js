@@ -23,7 +23,7 @@ exports.Main = Component.specialize(/** @lends Main# */ {
 
     handleNextButtonAction: {
         value: function() {
-            this.ownerComponent.parentComponent.switchValue = "user-friends";
+            this.templateObjects.substitution.switchValue = "user-friends";
         }
     }
 });
