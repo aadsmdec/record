@@ -9,12 +9,48 @@
             "properties": {
                 "element": {"#": "owner"}
             }
+        },
+        "text": {
+            "prototype": "montage/ui/text.reel",
+            "properties": {
+                "element": {"#": "text"},
+                "value": "Name:"
+            }
+        },
+        "text2": {
+            "prototype": "montage/ui/text.reel",
+            "properties": {
+                "element": {"#": "text2"},
+                "value": "Address:"
+            }
+        },
+        "textField": {
+            "prototype": "digit/ui/text-field.reel",
+            "properties": {
+                "element": {"#": "textField"},
+                "placeholderValue": "Text"
+            }
+        },
+        "textField2": {
+            "prototype": "digit/ui/text-field.reel",
+            "properties": {
+                "element": {"#": "textField2"},
+                "placeholderValue": "Text"
+            }
         }
     }
     </script>
 </head>
 <body>
     <div data-montage-id="owner" class="UserDetails">
+        <div>
+            <span data-montage-id="text"></span>
+            <input data-montage-id="textField" type="text">
+        </div>
+        <div>
+            <span data-montage-id="text2"></span>
+            <input data-montage-id="textField2" type="text">
+        </div>
     </div>
 </body>
 </html>
