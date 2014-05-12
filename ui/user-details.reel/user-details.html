@@ -16,7 +16,14 @@
                 "element": {"#": "nextButton"},
                 "enabled": true,
                 "label": "Next"
-            }
+            },
+            "listeners": [
+                {
+                    "type": "action",
+                    "useCapture": false,
+                    "listener": {"@": "owner"}
+                }
+            ]
         },
         "text": {
             "prototype": "montage/ui/text.reel",
@@ -37,6 +44,9 @@
             "properties": {
                 "element": {"#": "textField"},
                 "placeholderValue": ""
+            },
+            "bindings": {
+                "value": {"<-": "@owner.recordController.name"}
             }
         },
         "textField2": {
@@ -44,6 +54,9 @@
             "properties": {
                 "element": {"#": "textField2"},
                 "placeholderValue": ""
+            },
+            "bindings": {
+                "value": {"<-": "@owner.recordController.address"}
             }
         }
     }

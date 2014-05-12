@@ -10,3 +10,9 @@
 .UserDetails div {
     margin-bottom: 10px;
 }
+
+.UserDetails-next {
+    position: absolute;
+    bottom: 20px;
+    right: 50px;
+}

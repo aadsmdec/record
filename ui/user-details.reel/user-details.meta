@@ -10,13 +10,26 @@
       }
     }
   },
+  "blueprint_unnamed_recordController": {
+    "prototype": "montage/core/meta/property-blueprint",
+    "properties": {
+      "name": "recordController",
+      "blueprint": {"@": "root"},
+      "valueType": "object"
+    }
+  },
   "root": {
     "prototype": "montage/core/meta/module-blueprint",
     "properties": {
       "name": null,
       "parent": {"@": "blueprint_component_reference"},
+      "propertyBlueprints": [
+        {"@": "blueprint_unnamed_recordController"}
+      ],
       "propertyBlueprintGroups": {
-        "UserDetails": []
+        "UserDetails": [
+          {"@": "blueprint_unnamed_recordController"}
+        ]
       },
       "module": {
         "%": "ui/user-details.reel"
